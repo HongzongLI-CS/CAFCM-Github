@@ -1,3 +1,4 @@
+addpath kit
 %% load dataset
 id=1; %id=1, id=2, ..., id=14 denote different datasets
 [X,label,p] = load_dataset(id);
