@@ -23,7 +23,7 @@ schedule=2;
 %[resulting_label,obj_value,time_cost]=cafcm(X,n,m,p);
 
 %% Save results
-pre = [cd,'/results/'];
-filename = ['example_',num2str(id),'_cafcm.txt'];
-savePath = [pre,filename];
+%pre = [cd,'/results/'];
+filename = ['/example_',num2str(id),'_cafcm.txt'];
+savePath = [cd,filename];
 writematrix([obj_value,time_cost,resulting_label'],savePath,'Delimiter','\t','WriteMode','append')
